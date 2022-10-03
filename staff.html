@@ -1,0 +1,15 @@
+---
+layout: blah
+title: Staff
+---
+<h1>Staff</h1>
+
+<ul>
+  {% for favorite in site.favorites %}
+    <li>
+        <h2><a href="{{ favorite.url }}">{{ favorite.name }}</a></h2>
+      <h2>{{ favorite.name }}</h2>
+      <p>{{ favorite.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
