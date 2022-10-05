@@ -1,4 +1,4 @@
-$text-color: rgb(0, 0, 0);
+$black: rgb(0, 0, 0);
 $almost-white: #f7f7f7;
 $almost-white-filter: invert(100%) sepia(35%) saturate(0%) hue-rotate(349deg)
   brightness(104%) contrast(94%); // computed using https://codepen.io/sosuke/pen/Pjoqqp
@@ -6,7 +6,7 @@ $gray: rgb(50, 50, 50);
 $headshot-brown: rgb(164, 109, 0);
 
 body {
-  color: $text-color;
+  color: $black;
   background-color: $almost-white;
   font-family: "Tahoma", Sans-Serif;
   display: flex;
@@ -19,7 +19,7 @@ body {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border-color: rgb(255, 255, 255);
+  border-color: $black;
   border-width: 4px;
   border-style: solid;
 }
@@ -40,7 +40,7 @@ body {
   min-height: 50px;
   width: 100%;
   display: flex;
-  border-bottom: solid;
+  border-bottom: solid $gray;
 
   a {
     font-size: 17px;
