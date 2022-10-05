@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ee52b78a8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    {% include navigation.html %}
+    <div class="content">{{ content }}</div>
+    {% include footer.html %}
+  </body>
+</html>
