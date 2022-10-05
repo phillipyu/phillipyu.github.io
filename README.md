@@ -1,4 +1,5 @@
-# phillipyu.github.io
+# phillip.ink
 
-phillip.ink
-- phillip + digital ink = something New (?)
+Code for my personal website. Built with HTML/CSS, using Jekyll and deployed with Github Pages.
+
+Check it out at: [phillip.ink](https://phillip.ink)

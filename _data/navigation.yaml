@@ -1,6 +1,6 @@
 - name: Posts
   link: /posts
-  icon: fa-solid fa-pen fa-lg
+  icon: pencil-solid.svg
 - name: Projects
   link: /projects
-  icon: fa-solid fa-briefcase fa-lg
+  icon: briefcase-solid.svg

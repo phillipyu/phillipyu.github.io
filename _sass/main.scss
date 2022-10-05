@@ -1,7 +1,9 @@
 $text-color: rgb(0, 0, 0);
-$almost-white: rgb(247, 247, 247);
+$almost-white: #f7f7f7;
+$almost-white-filter: invert(100%) sepia(35%) saturate(0%) hue-rotate(349deg)
+  brightness(104%) contrast(94%); // computed using https://codepen.io/sosuke/pen/Pjoqqp
 $gray: rgb(50, 50, 50);
-$headshot-brown: rgb(162, 88, 37);
+$headshot-brown: rgb(164, 109, 0);
 
 body {
   color: $text-color;
@@ -62,8 +64,13 @@ body {
   }
 }
 
+// I colored the SVGs following this answer: https://stackoverflow.com/a/53336754
+.tab-icon {
+  filter: $almost-white-filter;
+}
+
 .tab-name {
-  padding-left: 4px;
+  padding-left: 8px;
 }
 
 .tab-home {
