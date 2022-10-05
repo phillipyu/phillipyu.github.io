@@ -1,9 +1,9 @@
-<nav>
-    <a href="/" {% if page.url == "/" %}style="color: red;"{% endif %}>Home</a>
-    <a href="/about" {% if page.url != "/about" %}class="current"{% endif %}>About</a>
+<nav class="topbar">
+    <a href="/" class="tab-home {% if page.url == "/" %}current{% endif %}"><i class="fa-solid fa-house fa-lg"></i></a>
     {% for item in site.data.navigation %}
         <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-            {{ item.name }}
+            <i class="{{ item.icon }}"></i>
+            <div class="tab-name">{{ item.name }}</div>
         </a>
   {% endfor %}
 </nav>

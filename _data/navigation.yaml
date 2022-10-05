@@ -1,8 +1,6 @@
-- name: Home
-  link: /
-- name: About
-  link: /about
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+- name: Posts
+  link: /posts
+  icon: fa-solid fa-pen fa-lg
+- name: Projects
+  link: /projects
+  icon: fa-solid fa-briefcase fa-lg
