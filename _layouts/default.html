@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <!-- add set-dark-mode script as blocking in the HTML head, so it runs before the layout has loaded and we don't get a flicker -->
+    <script src="/assets/js/set-dark-mode.js"></script>
   </head>
   <body>
     {% include navigation.html %}

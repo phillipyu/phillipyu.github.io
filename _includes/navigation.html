@@ -1,22 +1,30 @@
 <nav class="topbar">
-    <a href="/" class="tab-home {% if page.url == "/" %}current{% endif %}"
+  <a href="/" class="tab-home {% if page.url == "/" %}current{% endif %}"
     ><img
       src="/assets/images/house-solid.svg"
-      alt="twitter"
+      alt="home"
       height="28px"
       width="28px"
-      class="tab-icon"
+      class="tab-home-icon"
   /></a>
-    {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-            <i class="{{ item.icon }}"></i>
-            <img
-                src="/assets/images/{{item.icon}}"
-                height="16px"
-                width="16px"
-                class="tab-icon"
-            />
-            <div class="tab-name">{{ item.name }}</div>
-        </a>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+      <!-- <img
+          src="/assets/images/{{item.icon}}"
+          height="16px"
+          width="16px"
+          class="tab-icon"
+      /> -->
+      <div class="tab-name">{{ item.name }}</div>
+    </a>
   {% endfor %}
+  <img
+    src="/assets/images/moon-solid.svg"
+    alt="dark mode"
+    height="28px"
+    width="28px"
+    class="dark-mode-toggle"
+  />
+  <!-- in contrast to set-dark-mode, this script can be loaded async  -->
+  <script src="/assets/js/toggle-dark-mode.js" async></script>
 </nav>

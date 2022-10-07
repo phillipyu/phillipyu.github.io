@@ -1,37 +1,12 @@
 <footer class="social-media">
-  <a href="mailto:phillip.yu.1@gmail.com"
-    ><img
-      src="/assets/images/envelope-regular.svg"
-      alt="email"
+  {% for item in site.data.social-media %}
+  <a href="{{ item.link }}">
+    <img
+      src="/assets/images/{{item.icon}}"
       height="32px"
       width="32px"
-  /></a>
-  <a href="https://www.linkedin.com/in/phillip-yu/"
-    ><img
-      src="/assets/images/linkedin.svg"
-      alt="linkedin"
-      height="32px"
-      width="32px"
-  /></a>
-  <a href="https://github.com/phillipyu"
-    ><img
-      src="/assets/images/github.svg"
-      alt="github"
-      height="32px"
-      width="32px"
-  /></a>
-  <a href="https://twitter.com/yu_phillip"
-    ><img
-      src="/assets/images/twitter.svg"
-      alt="twitter"
-      height="32px"
-      width="32px"
-  /></a>
-  <a href="https://www.instagram.com/yu_phillip/"
-    ><img
-      src="/assets/images/instagram.svg"
-      alt="instagram"
-      height="32px"
-      width="32px"
-  /></a>
+      class="footer-icon"
+    />
+  </a>
+  {% endfor %}
 </footer>
